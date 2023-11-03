@@ -1,0 +1,27 @@
+.body{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(176, 120, 176);
+    border-radius: 50%;
+    position: absolute;
+    border: 5px dashed black;
+    border-radius: 50%;
+
+} 
+ 
+table{
+    background-color:#ce5c5c;
+    border: 3px solid rgb(57, 15, 15);
+    border-radius: 10%;
+}
+h3{
+    text-shadow: 3px 3px 6px rgb(248, 108, 77);
+    font-size: 50px;
+
+}
+body{
+    background: rgb(0,0,0,0.7)url(images/blood1.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    color: #FFF5E0;
+}

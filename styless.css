@@ -1,0 +1,96 @@
+img{
+    width:300px;
+    height: 300px;
+}
+@property --p{
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+  }
+  
+  .pie {
+    --p:20;
+    --b:22px;
+    --c:darkred;
+    --w:150px;
+    
+    width:var(--w);
+    aspect-ratio:1;
+    position:relative;
+    display:inline-grid;
+    margin:5px;
+    place-content:center;
+    font-size:25px;
+    font-weight:bold;
+    font-family:sans-serif;
+  }
+  .pie:before,
+  .pie:after {
+    content:"";
+    position:absolute;
+    border-radius:50%;
+  }
+  .pie:before {
+    inset:0;
+    background:
+      radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
+      conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+            mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+  }
+  .pie:after {
+    inset:calc(50% - var(--b)/2);
+    background:var(--c);
+    transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+  }
+  .animate {
+    animation:p 1s .5s both;
+  }
+  .no-round:before {
+    background-size:0 0,auto;
+  }
+  .no-round:after {
+    content:none;
+  }
+  @keyframes p {
+    from{--p:0}
+  }
+  
+  body {
+    width: 1000px;
+    background:#f2f2f2;
+    margin-left: 250px;
+  } 
+  .InfoSpring1{
+ background-color: #618264;
+  }
+  .InfoSpring2{
+    background-color: #79AC78;
+  }
+  .Skills{
+    background-color: #FFFFDD;
+  }
+  
+  .achievements1{
+    background-color: #A2C579;
+  }
+  .achievements2{
+    background-color: #D0E7D2;
+  }
+  
+  .projects{
+    background-color: #CEDEBD;
+  }
+  body{
+    background: rgb(0,0,0,0.7)url(https://images.inc.com/uploaded_files/image/1920x1080/getty_492157082_121124.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+  h1{
+    color: antiquewhite;
+    font-size: 60px;
+    text-align: center;
+  }
+  p{
+    font-size: large;
+  }

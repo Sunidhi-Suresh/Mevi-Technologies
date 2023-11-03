@@ -1,0 +1,27 @@
+
+.yellow{
+    background-color: yellow;
+    height: 200px;
+    width: 900px;
+
+}
+.red{
+    background-color: red;
+    height: 200px;
+    width: 900px;
+}
+.marquee{
+    color: brown;
+    animation:forwards;
+    position:absolute;
+}
+
+@keyframes forwards{
+    0%{
+        left:-1000px;
+    }
+
+    100%{
+        left: 1000px;
+    }
+}
