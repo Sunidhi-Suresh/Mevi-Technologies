@@ -12,8 +12,8 @@ img:hover{
     height: 170px;
 }
 a{
-    background-color: #365b6e;
-    color: antiquewhite;
+    background-color: #cbe7f5;
+    color: rgb(250, 235, 215);
     border: 40px solid 5px;
     font-size: 30px;
 
@@ -27,7 +27,7 @@ body{
     background-color:#64b7e4;
 }
 h1{
-    color:#153541 ;
+    color:#bae5f4 ;
     text-shadow: 2px 2px 6px rgb(17, 64, 100);
     font-size: 45px;
 
@@ -50,32 +50,3 @@ h1:hover{
     background-color: #afe3ef;
     background-blend-mode: darken;
 }
-.fab{
-    
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    margin-left:1300px;
-    display: inline-flex;
-      
-}
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-  .fa-instagram {
-    background: #f660f8;
-    color: white;
-  }
-  .fa-snapchat-ghost {
-    background: #fffc00;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }
-  .fa-telegram{
-    background:#007bb5; 
-    color: white;
-  }
